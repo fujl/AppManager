@@ -20,6 +20,12 @@
 		DF9B3A961FE904E9006CE0D8 /* AMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3A921FE904E9006CE0D8 /* AMNetworkManager.m */; };
 		DF9B3A971FE904E9006CE0D8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3A931FE904E9006CE0D8 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF9B3A981FE904E9006CE0D8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3A941FE904E9006CE0D8 /* Reachability.m */; };
+		DF9B3AA71FE91F9E006CE0D8 /* AMNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3AA51FE91F9E006CE0D8 /* AMNavigationController.h */; };
+		DF9B3AA81FE91F9E006CE0D8 /* AMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3AA61FE91F9E006CE0D8 /* AMNavigationController.m */; };
+		DF9B3AAB1FE91FEA006CE0D8 /* AMBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3AA91FE91FEA006CE0D8 /* AMBaseViewController.h */; };
+		DF9B3AAC1FE91FEA006CE0D8 /* AMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3AAA1FE91FEA006CE0D8 /* AMBaseViewController.m */; };
+		DF9B3AAF1FE923AA006CE0D8 /* AMLinearViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3AAD1FE923AA006CE0D8 /* AMLinearViewController.h */; };
+		DF9B3AB01FE923AA006CE0D8 /* AMLinearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3AAE1FE923AA006CE0D8 /* AMLinearViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		DF9B3A921FE904E9006CE0D8 /* AMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNetworkManager.m; sourceTree = "<group>"; };
 		DF9B3A931FE904E9006CE0D8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DF9B3A941FE904E9006CE0D8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DF9B3AA51FE91F9E006CE0D8 /* AMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMNavigationController.h; sourceTree = "<group>"; };
+		DF9B3AA61FE91F9E006CE0D8 /* AMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMNavigationController.m; sourceTree = "<group>"; };
+		DF9B3AA91FE91FEA006CE0D8 /* AMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBaseViewController.h; sourceTree = "<group>"; };
+		DF9B3AAA1FE91FEA006CE0D8 /* AMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBaseViewController.m; sourceTree = "<group>"; };
+		DF9B3AAD1FE923AA006CE0D8 /* AMLinearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLinearViewController.h; sourceTree = "<group>"; };
+		DF9B3AAE1FE923AA006CE0D8 /* AMLinearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLinearViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		DF0B7F6B1FE7D0D60045DFF2 /* AppManager */ = {
 			isa = PBXGroup;
 			children = (
+				DF9B3AA41FE91F6D006CE0D8 /* Base */,
 				DF9B3A901FE904E9006CE0D8 /* Network */,
 				DF9B3A8B1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h */,
 				DF9B3A8C1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m */,
@@ -96,6 +109,19 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		DF9B3AA41FE91F6D006CE0D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B3AA51FE91F9E006CE0D8 /* AMNavigationController.h */,
+				DF9B3AA61FE91F9E006CE0D8 /* AMNavigationController.m */,
+				DF9B3AA91FE91FEA006CE0D8 /* AMBaseViewController.h */,
+				DF9B3AAA1FE91FEA006CE0D8 /* AMBaseViewController.m */,
+				DF9B3AAD1FE923AA006CE0D8 /* AMLinearViewController.h */,
+				DF9B3AAE1FE923AA006CE0D8 /* AMLinearViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,10 +131,13 @@
 			files = (
 				DF0B7F6E1FE7D0D60045DFF2 /* AppManager.h in Headers */,
 				DF0B7F761FE7D0FA0045DFF2 /* AppBaseManager.h in Headers */,
+				DF9B3AAB1FE91FEA006CE0D8 /* AMBaseViewController.h in Headers */,
+				DF9B3AAF1FE923AA006CE0D8 /* AMLinearViewController.h in Headers */,
 				DF9B3A841FE8F0E7006CE0D8 /* UIApplication+AMManager.h in Headers */,
 				DF9B3A851FE8F0E7006CE0D8 /* UIApplicationManagerDelegate.h in Headers */,
 				DF9B3A971FE904E9006CE0D8 /* Reachability.h in Headers */,
 				DF9B3A951FE904E9006CE0D8 /* AMNetworkManager.h in Headers */,
+				DF9B3AA71FE91F9E006CE0D8 /* AMNavigationController.h in Headers */,
 				DF9B3A881FE8F16D006CE0D8 /* AppDefine.h in Headers */,
 				DF9B3A8D1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h in Headers */,
 			);
@@ -183,10 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9B3A961FE904E9006CE0D8 /* AMNetworkManager.m in Sources */,
+				DF9B3AA81FE91F9E006CE0D8 /* AMNavigationController.m in Sources */,
 				DF0B7F771FE7D0FA0045DFF2 /* AppBaseManager.m in Sources */,
+				DF9B3AB01FE923AA006CE0D8 /* AMLinearViewController.m in Sources */,
 				DF9B3A8E1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m in Sources */,
 				DF9B3A981FE904E9006CE0D8 /* Reachability.m in Sources */,
 				DF9B3A861FE8F0E7006CE0D8 /* UIApplication+AMManager.m in Sources */,
+				DF9B3AAC1FE91FEA006CE0D8 /* AMBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
