@@ -64,6 +64,4 @@
  */
 - (__kindof AppBaseManager *)getManager:(Class)cls;
 
-+ (int)logString;
-
 @end

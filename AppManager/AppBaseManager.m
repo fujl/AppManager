@@ -51,9 +51,4 @@ static NSMutableSet *baseManagerInstanceMark;
     return getManager(cls);
 }
 
-+ (int)logString {
-    NSLog(@"logString");
-    return 1000;
-}
-
 @end
