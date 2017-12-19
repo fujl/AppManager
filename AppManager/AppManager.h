@@ -19,3 +19,5 @@ FOUNDATION_EXPORT const unsigned char AppManagerFrameworkVersionString[];
 #import "UIApplication+AMManager.h"
 #import "AMWeakReferencesArray.h"
 #import "AMNetworkManager.h"
+#import "AMLinearViewController.h"
+#import "AMNavigationController.h"
