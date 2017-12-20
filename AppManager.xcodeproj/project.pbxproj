@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B13C8A54A699442C77D8C51B /* Pods_AppManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137A0B5B306D9C3930F38726 /* Pods_AppManager.framework */; };
 		DF0B7F6E1FE7D0D60045DFF2 /* AppManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0B7F6C1FE7D0D60045DFF2 /* AppManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF0B7F761FE7D0FA0045DFF2 /* AppBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0B7F741FE7D0FA0045DFF2 /* AppBaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF0B7F771FE7D0FA0045DFF2 /* AppBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0B7F751FE7D0FA0045DFF2 /* AppBaseManager.m */; };
@@ -14,8 +15,6 @@
 		DF9B3A851FE8F0E7006CE0D8 /* UIApplicationManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3A821FE8F0E7006CE0D8 /* UIApplicationManagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF9B3A861FE8F0E7006CE0D8 /* UIApplication+AMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3A831FE8F0E7006CE0D8 /* UIApplication+AMManager.m */; };
 		DF9B3A881FE8F16D006CE0D8 /* AppDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3A871FE8F16D006CE0D8 /* AppDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF9B3A8D1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3A8B1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF9B3A8E1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3A8C1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m */; };
 		DF9B3A951FE904E9006CE0D8 /* AMNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3A911FE904E9006CE0D8 /* AMNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF9B3A961FE904E9006CE0D8 /* AMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3A921FE904E9006CE0D8 /* AMNetworkManager.m */; };
 		DF9B3A971FE904E9006CE0D8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3A931FE904E9006CE0D8 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,9 +25,25 @@
 		DF9B3AAC1FE91FEA006CE0D8 /* AMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3AAA1FE91FEA006CE0D8 /* AMBaseViewController.m */; };
 		DF9B3AAF1FE923AA006CE0D8 /* AMLinearViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B3AAD1FE923AA006CE0D8 /* AMLinearViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF9B3AB01FE923AA006CE0D8 /* AMLinearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3AAE1FE923AA006CE0D8 /* AMLinearViewController.m */; };
+		DFCEFB9D1FE9F7AA005E2C13 /* AMResultCode.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFB9C1FE9F7AA005E2C13 /* AMResultCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBA01FE9F7EB005E2C13 /* AMWeakReferencesArray.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFB9E1FE9F7EB005E2C13 /* AMWeakReferencesArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBA11FE9F7EB005E2C13 /* AMWeakReferencesArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFB9F1FE9F7EB005E2C13 /* AMWeakReferencesArray.m */; };
+		DFCEFBA41FE9F815005E2C13 /* AMJson.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFBA21FE9F815005E2C13 /* AMJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBA51FE9F815005E2C13 /* AMJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBA31FE9F815005E2C13 /* AMJson.m */; };
+		DFCEFBA81FE9F868005E2C13 /* NSString+AMMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFBA61FE9F868005E2C13 /* NSString+AMMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBA91FE9F868005E2C13 /* NSString+AMMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBA71FE9F868005E2C13 /* NSString+AMMD5.m */; };
+		DFCEFBAC1FE9F981005E2C13 /* UIColor+AMDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFBAA1FE9F981005E2C13 /* UIColor+AMDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBAD1FE9F981005E2C13 /* UIColor+AMDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBAB1FE9F981005E2C13 /* UIColor+AMDefine.m */; };
+		DFCEFBB01FE9FA05005E2C13 /* UIImage+AMColor.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFBAE1FE9FA05005E2C13 /* UIImage+AMColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBB11FE9FA05005E2C13 /* UIImage+AMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBAF1FE9FA05005E2C13 /* UIImage+AMColor.m */; };
+		DFCEFBB41FE9FA69005E2C13 /* AMGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCEFBB21FE9FA69005E2C13 /* AMGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCEFBB51FE9FA69005E2C13 /* AMGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBB31FE9FA69005E2C13 /* AMGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		137A0B5B306D9C3930F38726 /* Pods_AppManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7FD05FA4B83F33D39911A6 /* Pods-AppManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppManager/Pods-AppManager.debug.xcconfig"; sourceTree = "<group>"; };
+		8676EAC7710E1F0A7945ED0A /* Pods-AppManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppManager/Pods-AppManager.release.xcconfig"; sourceTree = "<group>"; };
 		DF0B7F691FE7D0D60045DFF2 /* AppManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0B7F6C1FE7D0D60045DFF2 /* AppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
 		DF0B7F6D1FE7D0D60045DFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,8 +53,6 @@
 		DF9B3A821FE8F0E7006CE0D8 /* UIApplicationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApplicationManagerDelegate.h; sourceTree = "<group>"; };
 		DF9B3A831FE8F0E7006CE0D8 /* UIApplication+AMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AMManager.m"; sourceTree = "<group>"; };
 		DF9B3A871FE8F16D006CE0D8 /* AppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
-		DF9B3A8B1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWeakReferencesArray.h; sourceTree = "<group>"; };
-		DF9B3A8C1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWeakReferencesArray.m; sourceTree = "<group>"; };
 		DF9B3A911FE904E9006CE0D8 /* AMNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMNetworkManager.h; sourceTree = "<group>"; };
 		DF9B3A921FE904E9006CE0D8 /* AMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMNetworkManager.m; sourceTree = "<group>"; };
 		DF9B3A931FE904E9006CE0D8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -50,6 +63,19 @@
 		DF9B3AAA1FE91FEA006CE0D8 /* AMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBaseViewController.m; sourceTree = "<group>"; };
 		DF9B3AAD1FE923AA006CE0D8 /* AMLinearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLinearViewController.h; sourceTree = "<group>"; };
 		DF9B3AAE1FE923AA006CE0D8 /* AMLinearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLinearViewController.m; sourceTree = "<group>"; };
+		DFCEFB9C1FE9F7AA005E2C13 /* AMResultCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMResultCode.h; sourceTree = "<group>"; };
+		DFCEFB9E1FE9F7EB005E2C13 /* AMWeakReferencesArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWeakReferencesArray.h; sourceTree = "<group>"; };
+		DFCEFB9F1FE9F7EB005E2C13 /* AMWeakReferencesArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWeakReferencesArray.m; sourceTree = "<group>"; };
+		DFCEFBA21FE9F815005E2C13 /* AMJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMJson.h; sourceTree = "<group>"; };
+		DFCEFBA31FE9F815005E2C13 /* AMJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMJson.m; sourceTree = "<group>"; };
+		DFCEFBA61FE9F868005E2C13 /* NSString+AMMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AMMD5.h"; sourceTree = "<group>"; };
+		DFCEFBA71FE9F868005E2C13 /* NSString+AMMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AMMD5.m"; sourceTree = "<group>"; };
+		DFCEFBAA1FE9F981005E2C13 /* UIColor+AMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+AMDefine.h"; sourceTree = "<group>"; };
+		DFCEFBAB1FE9F981005E2C13 /* UIColor+AMDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AMDefine.m"; sourceTree = "<group>"; };
+		DFCEFBAE1FE9FA05005E2C13 /* UIImage+AMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+AMColor.h"; sourceTree = "<group>"; };
+		DFCEFBAF1FE9FA05005E2C13 /* UIImage+AMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AMColor.m"; sourceTree = "<group>"; };
+		DFCEFBB21FE9FA69005E2C13 /* AMGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMGlobal.h; sourceTree = "<group>"; };
+		DFCEFBB31FE9FA69005E2C13 /* AMGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +83,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13C8A54A699442C77D8C51B /* Pods_AppManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF61DD8545C537C6488CEA02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D7FD05FA4B83F33D39911A6 /* Pods-AppManager.debug.xcconfig */,
+				8676EAC7710E1F0A7945ED0A /* Pods-AppManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0B26333C993B803668C417E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137A0B5B306D9C3930F38726 /* Pods_AppManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF0B7F5F1FE7D0D60045DFF2 = {
 			isa = PBXGroup;
 			children = (
 				DF0B7F6B1FE7D0D60045DFF2 /* AppManager */,
 				DF0B7F6A1FE7D0D60045DFF2 /* Products */,
+				AF61DD8545C537C6488CEA02 /* Pods */,
+				D0B26333C993B803668C417E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,10 +128,9 @@
 		DF0B7F6B1FE7D0D60045DFF2 /* AppManager */ = {
 			isa = PBXGroup;
 			children = (
+				DFCEFB9A1FE9F7AA005E2C13 /* Utils */,
 				DF9B3AA41FE91F6D006CE0D8 /* Base */,
 				DF9B3A901FE904E9006CE0D8 /* Network */,
-				DF9B3A8B1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h */,
-				DF9B3A8C1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m */,
 				DF9B3A871FE8F16D006CE0D8 /* AppDefine.h */,
 				DF9B3A811FE8F0E7006CE0D8 /* UIApplication+AMManager.h */,
 				DF9B3A831FE8F0E7006CE0D8 /* UIApplication+AMManager.m */,
@@ -122,6 +167,34 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		DFCEFB9A1FE9F7AA005E2C13 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DFCEFB9B1FE9F7AA005E2C13 /* Common */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DFCEFB9B1FE9F7AA005E2C13 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DFCEFB9E1FE9F7EB005E2C13 /* AMWeakReferencesArray.h */,
+				DFCEFB9F1FE9F7EB005E2C13 /* AMWeakReferencesArray.m */,
+				DFCEFB9C1FE9F7AA005E2C13 /* AMResultCode.h */,
+				DFCEFBA21FE9F815005E2C13 /* AMJson.h */,
+				DFCEFBA31FE9F815005E2C13 /* AMJson.m */,
+				DFCEFBA61FE9F868005E2C13 /* NSString+AMMD5.h */,
+				DFCEFBA71FE9F868005E2C13 /* NSString+AMMD5.m */,
+				DFCEFBAA1FE9F981005E2C13 /* UIColor+AMDefine.h */,
+				DFCEFBAB1FE9F981005E2C13 /* UIColor+AMDefine.m */,
+				DFCEFBAE1FE9FA05005E2C13 /* UIImage+AMColor.h */,
+				DFCEFBAF1FE9FA05005E2C13 /* UIImage+AMColor.m */,
+				DFCEFBB21FE9FA69005E2C13 /* AMGlobal.h */,
+				DFCEFBB31FE9FA69005E2C13 /* AMGlobal.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -136,10 +209,16 @@
 				DF9B3A971FE904E9006CE0D8 /* Reachability.h in Headers */,
 				DF9B3A951FE904E9006CE0D8 /* AMNetworkManager.h in Headers */,
 				DF9B3AAB1FE91FEA006CE0D8 /* AMBaseViewController.h in Headers */,
+				DFCEFBB01FE9FA05005E2C13 /* UIImage+AMColor.h in Headers */,
+				DFCEFBA01FE9F7EB005E2C13 /* AMWeakReferencesArray.h in Headers */,
+				DFCEFBAC1FE9F981005E2C13 /* UIColor+AMDefine.h in Headers */,
+				DFCEFBA81FE9F868005E2C13 /* NSString+AMMD5.h in Headers */,
+				DFCEFBA41FE9F815005E2C13 /* AMJson.h in Headers */,
+				DFCEFB9D1FE9F7AA005E2C13 /* AMResultCode.h in Headers */,
+				DFCEFBB41FE9FA69005E2C13 /* AMGlobal.h in Headers */,
 				DF9B3AAF1FE923AA006CE0D8 /* AMLinearViewController.h in Headers */,
 				DF9B3AA71FE91F9E006CE0D8 /* AMNavigationController.h in Headers */,
 				DF9B3A881FE8F16D006CE0D8 /* AppDefine.h in Headers */,
-				DF9B3A8D1FE8F7AF006CE0D8 /* AMWeakReferencesArray.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,10 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF0B7F711FE7D0D60045DFF2 /* Build configuration list for PBXNativeTarget "AppManager" */;
 			buildPhases = (
+				CF2AF6CC0D9A2A0E5B2B35CD /* [CP] Check Pods Manifest.lock */,
 				DF0B7F641FE7D0D60045DFF2 /* Sources */,
 				DF0B7F651FE7D0D60045DFF2 /* Frameworks */,
 				DF0B7F661FE7D0D60045DFF2 /* Headers */,
 				DF0B7F671FE7D0D60045DFF2 /* Resources */,
+				9EF07EE4A111F379F39C6FE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,17 +287,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9EF07EE4A111F379F39C6FE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppManager/Pods-AppManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2AF6CC0D9A2A0E5B2B35CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF0B7F641FE7D0D60045DFF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DF9B3A961FE904E9006CE0D8 /* AMNetworkManager.m in Sources */,
+				DFCEFBB11FE9FA05005E2C13 /* UIImage+AMColor.m in Sources */,
+				DFCEFBB51FE9FA69005E2C13 /* AMGlobal.m in Sources */,
+				DFCEFBA11FE9F7EB005E2C13 /* AMWeakReferencesArray.m in Sources */,
 				DF9B3AA81FE91F9E006CE0D8 /* AMNavigationController.m in Sources */,
 				DF0B7F771FE7D0FA0045DFF2 /* AppBaseManager.m in Sources */,
+				DFCEFBAD1FE9F981005E2C13 /* UIColor+AMDefine.m in Sources */,
 				DF9B3AB01FE923AA006CE0D8 /* AMLinearViewController.m in Sources */,
-				DF9B3A8E1FE8F7AF006CE0D8 /* AMWeakReferencesArray.m in Sources */,
 				DF9B3A981FE904E9006CE0D8 /* Reachability.m in Sources */,
+				DFCEFBA91FE9F868005E2C13 /* NSString+AMMD5.m in Sources */,
+				DFCEFBA51FE9F815005E2C13 /* AMJson.m in Sources */,
 				DF9B3A861FE8F0E7006CE0D8 /* UIApplication+AMManager.m in Sources */,
 				DF9B3AAC1FE91FEA006CE0D8 /* AMBaseViewController.m in Sources */,
 			);
@@ -337,6 +459,7 @@
 		};
 		DF0B7F721FE7D0D60045DFF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7FD05FA4B83F33D39911A6 /* Pods-AppManager.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -366,6 +489,7 @@
 		};
 		DF0B7F731FE7D0D60045DFF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8676EAC7710E1F0A7945ED0A /* Pods-AppManager.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",

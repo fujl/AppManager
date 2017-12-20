@@ -8,6 +8,7 @@
 
 #import "AMLinearViewController.h"
 #import <objc/runtime.h>
+#import "Masonry/Masonry.h"
 
 @implementation UIView (AMLinearViewControllerMargin)
 
@@ -130,14 +131,14 @@ static const char AMLinearViewControllerSize_lcRightWidth = '\0';
     [_scrollView addSubview:_container];
     
     [_scrollView addConstraints:@[]];
-//    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.top.bottom.equalTo(self.view);
-//    }];
+    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.bottom.equalTo(self.view);
+    }];
     
-//    [_container mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.top.bottom.equalTo(_scrollView);
-//        make.width.equalTo(_scrollView);
-//    }];
+    [_container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.bottom.equalTo(_scrollView);
+        make.width.equalTo(_scrollView);
+    }];
     _gravity = AMLinearViewControllerGravityFit;
 }
 
