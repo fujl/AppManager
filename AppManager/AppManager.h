@@ -16,15 +16,35 @@ FOUNDATION_EXPORT const unsigned char AppManagerFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AppManagerFramework/PublicHeader.h>
 
-#import "UIApplication+AMManager.h"
-#import "AMWeakReferencesArray.h"
-#import "AMNetworkManager.h"
-#import "AMLinearViewController.h"
-#import "AMNavigationController.h"
-#import "AMResultCode.h"
-#import "AMJson.h"
-#import "NSString+AMMD5.h"
-#import "AMResultCode.h"
-#import "UIColor+AMDefine.h"
-#import "UIImage+AMColor.h"
-#import "AMGlobal.h"
+#import "UIApplication+DMManager.h"
+
+#import "DMLinearViewController.h"
+#import "DMNavigationController.h"
+
+#import "DMWeakReferencesArray.h"
+#import "DMResultCode.h"
+#import "DMJson.h"
+#import "NSString+DMMD5.h"
+#import "UIColor+DMDefine.h"
+#import "UIImage+DMColor.h"
+#import "DMGlobal.h"
+#import "NSString+DMFont.h"
+
+#pragma mark - manager
+#import "DMNetworkManager.h"
+
+#pragma mark - view
+#import "DMDatePickerView.h"
+#import "DMDetailView.h"
+#import "DMEntryCommitView.h"
+#import "DMEntrySelectView.h"
+#import "DMEntryView.h"
+#import "DMMarqueeView.h"
+#import "DMMultiLineTextView.h"
+#import "DMMultiLineView.h"
+#import "DMPickerView.h"
+#import "DMSelectItemView.h"
+#import "DMSingleTextView.h"
+#import "DMSingleView.h"
+#import "DMSwitchView.h"
+#import "DMTaskOperatorView.h"

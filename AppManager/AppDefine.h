@@ -28,4 +28,19 @@
 #define AppWindow [UIApplication sharedApplication].delegate.window
 #define AppRootViewController AppWindow.rootViewController
 
+#define kMainFont           [UIFont systemFontOfSize:14]
+
+#define kCommitFont           [UIFont systemFontOfSize:16]
+
+#define kCommitBtnColor     [UIColor colorWithRGB:0x449d44]
+
+/**
+ * 时间类别, 0 上午, 1 下午
+ */
+typedef NS_ENUM(NSInteger, DMDateType) {
+    DMDateTypeNone = -1,         // 未知
+    DMDateTypeMorning,          // 上午
+    DMDateTypeAfternoon,        // 下午
+};
+
 #endif /* AppDefine_h */
