@@ -10,6 +10,7 @@
 #import "AMNetworkManager.h"
 #import "AppDefine.h"
 #import "UIApplication+AMManager.h"
+#import "UIImage+AMColor.h"
 
 CGFloat itemSize = 44;
 
@@ -31,27 +32,15 @@ CGFloat itemSize = 44;
         NSString *lastControllerTitle = [NSString stringWithFormat:@"%@", lastController.title];
         UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] init];
         if(lastControllerTitle.length > 3){
-            backBtn.title = NSLocalizedString(@"goback", @"返回");
+            backBtn.title = @"返回";
         } else {
             backBtn.title = lastControllerTitle;
         }
         self.navigationItem.backBarButtonItem = backBtn;
         self.hidesBottomBarWhenPushed = YES;
     }
-    [self.navigationController.navigationBar setShadowImage:[self imageWithColor:UIColorFromRGB(0xebebeb) size:CGSizeMake(SCREEN_WIDTH, 0.5f)]];
-    [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:UIColorFromRGB(0xefefef) size:CGSizeMake(SCREEN_WIDTH, 64.0f)] forBarMetrics:UIBarMetricsDefault];
-}
-
-- (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
-    if (!color || size.width <= 0 || size.height <= 0) return nil;
-    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+    [self.navigationController.navigationBar setShadowImage:[UIImage imageWithColor:UIColorFromRGB(0xebebeb) size:CGSizeMake(SCREEN_WIDTH, 0.5f)]];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:UIColorFromRGB(0xefefef) size:CGSizeMake(SCREEN_WIDTH, 64.0f)] forBarMetrics:UIBarMetricsDefault];
 }
 
 // 判断是否有网络
